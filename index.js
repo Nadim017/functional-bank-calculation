@@ -47,6 +47,7 @@ document.getElementById('btn_widthdraw').addEventListener('click', function () {
   }
   if (widhdraw_input_field > balance_total) {
     alert('You do not have sufficient amount');
+    inputField.value = '';
     return;
   }
   const newbalance_total = balance_total - widhdraw_input_field;
